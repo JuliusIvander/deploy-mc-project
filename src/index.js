@@ -33,9 +33,6 @@ class App extends React.Component {
     const naturalWidth = image.naturalWidth;
     const naturalHeight = image.naturalHeight;
 
-    // canvas.width = image.width;
-    // canvas.height = image.height;
-
     ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
     ctx.fillStyle = "#000000";
     ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -138,7 +135,7 @@ class App extends React.Component {
                 src={this.state.preview}
               />
             ) : (
-              "Choose or drop a file."
+              "Pilih atau Drop Sebuah Gambar"
             )}
             <canvas id="canvas" width="640" height="640" />
           </MagicDropzone>
